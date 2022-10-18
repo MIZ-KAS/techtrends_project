@@ -16,3 +16,6 @@ Step 2: Github actions
         1. Create a new repo
         2. push your codes to the new repo
         3. create the `techtrends-dockerhub.yml` in the `.github/workflows/` Might be created automatically when creating the github action. 
+        4. Add the docker token and GitHub encrypted secrets from the project directory Goto `settings` > `secret` > `Actions` > click `New repository secret`
+
+![Deploying web app screenshot](screenshoots/docker_secret.PNG "Deploying webapp screenshot")
