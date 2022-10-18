@@ -106,3 +106,12 @@ username: admin
 pssword: run command `` kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo ``
 generated password: MPxL7340G95KVVru
 kubectl describe po -n sandbox
+
+touch helm-techtrends-staging.yaml
+vim helm-techtrends-staging.yaml
+
+touch helm-techtrends-prod.yaml
+vim helm-techtrends-prod.yaml
+
+kubectl apply -f helm-techtrends-staging.yaml
+kubectl apply -f helm-techtrends-prod.yaml
