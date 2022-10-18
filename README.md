@@ -50,7 +50,9 @@ Make sure your oracle VM Box is open
 ```
 touch namespace.yaml
 touch deploy.yaml
+vim deploy.yaml
 touch service.yaml
+vim service.yaml
 ```
 
 ```
@@ -66,4 +68,37 @@ Get all Kubectl namespace
 
 `` kubectl get all -n sandbox ``
 
+Gett all running pods 
+`` kubectl get po -A ``
+
 Step 4: Helm Charts
+
+1. create the folder templates/ and add all requires files.
+2. create the chart.yaml, values.yaml etc 
+
+Step 5: Continuous Delivery with ArgoCD
+
+1. install AgroCD in your VM Box
+
+```
+kubectl create namespace argocd
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+```
+Note: AFter running the command, you need to wait for sometime to get the container running after which you can continue
+
+## get all pods
+
+`` kubectl get po -n argocd ``
+
+## get all services
+
+`` kubectl get svc -n argocd ``
+
+Now we need to expose it to the internet
+First, you need to get the argocd-server from the list of service 
+
+touch argocd-server-nodeport.yaml
+vim argocd-server-nodeport.yaml
+kubectl apply -f argocd-server-nodeport.yaml
+
+kubectl describe po -n sandbox
