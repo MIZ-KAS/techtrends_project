@@ -9,13 +9,3 @@ To run this application there are 2 steps required:
 1. Initialize the database by using the `python init_db.py` command. This will create or overwrite the `database.db` file that is used by the web application.
 2.  Run the TechTrends application by using the `python app.py` command. The application is running on port `3111` and you can access it by querying the `http://127.0.0.1:3111/` endpoint.
 
-### Techtrends project 
-
-Step 1: Creating the docker images and taging it.
-Step 2: Github actions 
-        1. Create a new repo
-        2. push your codes to the new repo
-        3. create the `techtrends-dockerhub.yml` in the `.github/workflows/` Might be created automatically when creating the github action. 
-        4. Add the docker token and GitHub encrypted secrets from the project directory Goto `settings` > `secret` > `Actions` > click `New repository secret`
-
-![Deploying web app screenshot](screenshoots/docker_secret.PNG "Deploying webapp screenshot")
