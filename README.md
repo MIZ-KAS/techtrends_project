@@ -3,6 +3,41 @@
 Step 1: Creating the docker images and taging it: Docker for Application Packaging 
 ### Docker contents here 
 
+## Docker Login
+
+docker login
+
+## Commands used to build the application
+
+docker build -t techtrends .
+
+## commands to test and run the application 
+
+docker run -dp 7111:3111 techtrends
+
+## Docker run output 
+
+dae7727546ee9b84ae2b828fb23f5b45fb5723d217695f9f345e9262e858d0eb
+
+## Docker command to retrieve the logs 
+
+docker logs <container ID>
+
+## TechTrends logs
+
+Put the output from the logs 
+
+## DOcker command to tag the image 
+
+docker tag techtrends yourrepo/techtrends:v1.0.0 
+
+## Docker command to push the images to dockerhub 
+
+docker push yourrepo/techtrends:v1.0.0
+
+docker tag local-image:tagname new-repo:tagname
+docker push new-repo:tagname
+
 
 
 Step 2: Github actions: Continuous Integration with Github Actions
