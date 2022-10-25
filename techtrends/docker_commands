@@ -15,61 +15,16 @@ docker run -dp 7111:3111 techtrends
 
 ## Docker run output 
 
-9d60f493472e42fab3f16321bc8bc5c93db39f044a1709db46d74be99283fdca
+
 
 ## Docker command to retrieve the logs 
 
-docker logs 9d60f493472e42fab3f16321bc8bc5c93db39f044a1709db46d74be99283fdca
+docker logs 
 
 ## TechTrends logs
 
-* Serving Flask app 'app' (lazy loading)
- * Environment: production
-   WARNING: This is a development server. Do not use it in a production deployment.
-   Use a production WSGI server instead.
- * Debug mode: off
-WARNING:werkzeug: * Running on all addresses.
-   WARNING: This is a development server. Do not use it in a production deployment.
-INFO:werkzeug: * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
-WARNING:werkzeug: * Running on all addresses.
-   WARNING: This is a development server. Do not use it in a production deployment.
-INFO:werkzeug: * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:05:17] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:05:17] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:05:17] "GET /static/css/main.css HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:05:17] "GET /static/css/main.css HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:05:17] "GET /favicon.ico HTTP/1.1" 404 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:05:17] "GET /favicon.ico HTTP/1.1" 404 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:05:56] "GET /metrics HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:05:56] "GET /metrics HTTP/1.1" 200 -
-DEBUG:app:Tue Oct 18 09:06:11 2022, Test debug message
-DEBUG:app:Tue Oct 18 09:06:11 2022, Test debug message
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:06:11] "GET /healthz HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:06:11] "GET /healthz HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:06:19] "GET /healthzfvv HTTP/1.1" 404 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:06:19] "GET /healthzfvv HTTP/1.1" 404 -
-DEBUG:app:Tue Oct 18 09:06:25 2022, About page retrieved.
-DEBUG:app:Tue Oct 18 09:06:25 2022, About page retrieved.
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:06:25] "GET /about HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:06:25] "GET /about HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:06:25] "GET /static/css/main.css HTTP/1.1" 304 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:06:25] "GET /static/css/main.css HTTP/1.1" 304 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:06:26] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:06:26] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:06:26] "GET /static/css/main.css HTTP/1.1" 304 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:06:26] "GET /static/css/main.css HTTP/1.1" 304 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:06:27] "GET /create HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:06:27] "GET /create HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:06:27] "GET /static/css/main.css HTTP/1.1" 304 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:06:27] "GET /static/css/main.css HTTP/1.1" 304 -
-DEBUG:app:Tue Oct 18 09:06:59 2022, Post "My docker training " created.
-DEBUG:app:Tue Oct 18 09:06:59 2022, Post "My docker training " created.
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:06:59] "POST /create HTTP/1.1" 302 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:06:59] "POST /create HTTP/1.1" 302 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:06:59] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:06:59] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:06:59] "GET /static/css/main.css HTTP/1.1" 304 -
-INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:06:59] "GET /static/css/main.css HTTP/1.1" 304 -
+
+
 
 ## DOcker command to tag the image 
 

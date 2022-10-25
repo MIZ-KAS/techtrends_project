@@ -62,7 +62,7 @@ kubectl apply -f deploy.yaml
 kubectl apply -f service.yaml
 
 ```
-
+kubectl delete -f namespace.yaml
 
 Get all Kubectl namespace 
 
