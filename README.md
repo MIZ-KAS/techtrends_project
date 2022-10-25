@@ -96,16 +96,22 @@ Note: AFter running the command, you need to wait for sometime to get the contai
 
 Now we need to expose it to the internet
 First, you need to get the argocd-server from the list of service 
+and copy the yaml ` argocd-server-nodeport.yaml` from here https://github.com/udacity/nd064_course_1/blob/main/solutions/argocd/argocd-server-nodeport.yaml 
 
 touch argocd-server-nodeport.yaml
 vim argocd-server-nodeport.yaml
 kubectl apply -f argocd-server-nodeport.yaml
 
+`` kubectl get svc -n argocd `` again 
+
+then access the ArgoCD UI by going to https://192.168.50.4:30008 or http://192.168.50.4:30007
 To login to argocd 
 username: admin
 pssword: run command `` kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo ``
 generated password: MPxL7340G95KVVru
+
 kubectl describe po -n sandbox
+
 
 touch helm-techtrends-staging.yaml
 vim helm-techtrends-staging.yaml

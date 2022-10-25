@@ -20,6 +20,8 @@ docker login
 
 docker build -t techtrends .
 
+Adeowo@202021
+
 
 ## commands to test and run the application 
 
@@ -85,8 +87,11 @@ INFO:werkzeug:172.17.0.1 - - [18/Oct/2022 09:06:59] "GET /static/css/main.css HT
 
 ## DOcker command to tag the image 
 
-docker tag techtrends lksa/techtrends:v1.0.0
+techtrends
 
 ## Docker command to push the images to dockerhub 
 
 docker push lksa/techtrends:v1.0.0
+
+docker tag local-image:tagname new-repo:tagname
+docker push new-repo:tagname
