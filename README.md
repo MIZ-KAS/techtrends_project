@@ -107,17 +107,19 @@ kubectl apply -f argocd-server-nodeport.yaml
 then access the ArgoCD UI by going to https://192.168.50.4:30008 or http://192.168.50.4:30007
 To login to argocd 
 username: admin
-pssword: run command `` kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo ``
+password: run command `` kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo ``
 generated password: MPxL7340G95KVVru
 
 kubectl describe po -n sandbox
 
 
-touch helm-techtrends-staging.yaml
-vim helm-techtrends-staging.yaml
+``touch helm-techtrends-staging.yaml``
+``vim helm-techtrends-staging.yaml``
 
-touch helm-techtrends-prod.yaml
-vim helm-techtrends-prod.yaml
+``touch helm-techtrends-prod.yaml``
+``vim helm-techtrends-prod.yaml``
 
-kubectl apply -f helm-techtrends-staging.yaml
-kubectl apply -f helm-techtrends-prod.yaml
+``kubectl apply -f helm-techtrends-staging.yaml``
+``kubectl apply -f helm-techtrends-prod.yaml``
+
+``

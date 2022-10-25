@@ -101,6 +101,7 @@ INFO:werkzeug:172.17.0.1 - - [25/Oct/2022 18:25:30] "GET / HTTP/1.1" 200 -
 INFO:werkzeug:172.17.0.1 - - [25/Oct/2022 18:25:30] "GET / HTTP/1.1" 200 -
 INFO:werkzeug:172.17.0.1 - - [25/Oct/2022 18:25:30] "GET /static/css/main.css HTTP/1.1" 304 -
 INFO:werkzeug:172.17.0.1 - - [25/Oct/2022 18:25:30] "GET /static/css/main.css HTTP/1.1" 304 -
+
 ## DOcker command to tag the image 
 
 docker tag techtrends lksa/techtrends:v1.0.0 
